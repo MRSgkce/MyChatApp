@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		44DB27B42D6B3F420092D3B9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 44DB27B32D6B3F420092D3B9 /* FirebaseAuth */; };
+		44DB27B62D6B3F420092D3B9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 44DB27B52D6B3F420092D3B9 /* FirebaseFirestore */; };
+		44DB27B82D6B3F420092D3B9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 44DB27B72D6B3F420092D3B9 /* FirebaseStorage */; };
+		44DB27BA2D6B40850092D3B9 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 44DB27B92D6B40850092D3B9 /* FirebaseCore */; };
+		44DB27C12D6B68870092D3B9 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 44DB27C02D6B68870092D3B9 /* JGProgressHUD */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		440B4AB52D61292A001C4258 /* MyChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DB27B42D6B3F420092D3B9 /* FirebaseAuth in Frameworks */,
+				44DB27B62D6B3F420092D3B9 /* FirebaseFirestore in Frameworks */,
+				44DB27BA2D6B40850092D3B9 /* FirebaseCore in Frameworks */,
+				44DB27B82D6B3F420092D3B9 /* FirebaseStorage in Frameworks */,
+				44DB27C12D6B68870092D3B9 /* JGProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,11 @@
 			);
 			name = MyChatApp;
 			packageProductDependencies = (
+				44DB27B32D6B3F420092D3B9 /* FirebaseAuth */,
+				44DB27B52D6B3F420092D3B9 /* FirebaseFirestore */,
+				44DB27B72D6B3F420092D3B9 /* FirebaseStorage */,
+				44DB27B92D6B40850092D3B9 /* FirebaseCore */,
+				44DB27C02D6B68870092D3B9 /* JGProgressHUD */,
 			);
 			productName = MyChatApp;
 			productReference = 440B4AB52D61292A001C4258 /* MyChatApp.app */;
@@ -107,6 +125,10 @@
 			);
 			mainGroup = 440B4AAC2D61292A001C4258;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				44DB27B22D6B3F420092D3B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				44DB27BF2D6B68870092D3B9 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 440B4AB62D61292A001C4258 /* Products */;
 			projectDirPath = "";
@@ -333,6 +355,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44DB27B22D6B3F420092D3B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.8.1;
+			};
+		};
+		44DB27BF2D6B68870092D3B9 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44DB27B32D6B3F420092D3B9 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44DB27B22D6B3F420092D3B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		44DB27B52D6B3F420092D3B9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44DB27B22D6B3F420092D3B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		44DB27B72D6B3F420092D3B9 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44DB27B22D6B3F420092D3B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		44DB27B92D6B40850092D3B9 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44DB27B22D6B3F420092D3B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		44DB27C02D6B68870092D3B9 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44DB27BF2D6B68870092D3B9 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 440B4AAD2D61292A001C4258 /* Project object */;
 }
